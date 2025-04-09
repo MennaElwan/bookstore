@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* Full-screen background */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('images/bookstore-bg.jpg') center/cover no-repeat; /* Change to your background image */
+        }
+        
+        /* Centered Welcome Section */
+        .welcome-container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+            padding: 40px;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        /* Heading */
+        .welcome-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        /* Subtext */
+        .welcome-container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        /* Explore Button */
+        .explore-button {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        
+        .explore-button:hover {
+            background-color: #0056b3;
+        }
+        </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Home</div> 
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul> 
+    <div class="menu-icon" onclick="toggleMenu()">☰</div> 
+</nav>
+
+    <div class="welcome-container">
+        <h1>Welcome to Our Bookstore</h1>
+        <p>Your one-stop shop for amazing books!</p>
+        <a href="books.html" class="explore-button">Explore Books</a>
+    </div>
+
+
+<script src="script.js"></script>
+</body>

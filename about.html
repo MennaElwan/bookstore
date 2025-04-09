@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .about-container {
+            max-width: 800px;
+            margin: 200px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, p {
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        width: 150px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 25px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">About</div> 
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> 
+    </nav>
+
+    <div class="about-container">
+        <h1>About Our Bookstore</h1>
+        <p>Welcome to our online bookstore, your one-stop destination for finding the best books across all genres. We are passionate about literature and dedicated to bringing readers closer to the stories they love.</p>
+        <p>Founded in 2025, our goal has always been to provide high-quality books at affordable prices while ensuring an exceptional shopping experience for book lovers around the world.</p>
+        <p>Whether you are searching for fiction, non-fiction, classics, or the latest bestsellers, we have something for everyone.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
